@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstPrint - Print Nearby. Earn from Your Printer.</title>
+    <meta name="description" content="Find nearby printing services or earn extra income from your home printer in Singapore.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">🖨️ InstPrint</a>
@@ -16,213 +16,203 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#find-printer" class="nav-link">Find a Printer</a></li>
-                <li><a href="#register-printer" class="nav-link">Become Printer Owner</a></li>
+                <li><a href="#register-printer" class="nav-link">Become a Printer Owner</a></li>
                 <li><a href="#my-orders" class="nav-link">My Orders</a></li>
                 <li><a href="#owner-dashboard" class="nav-link">Owner Dashboard</a></li>
                 <li><a href="#admin-dashboard" class="nav-link admin-link">Admin Demo</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Open navigation menu" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Home Section -->
-        <section id="home" class="section active">
+    <main class="container">
+        <section id="home" class="section active" aria-label="Home section">
             <div class="hero">
-                <h1>Print Nearby</h1>
-                <h2>Earn from Your Printer</h2>
-                <p class="subtitle">Find a nearby printer when you need documents, or earn extra income by offering printing services from home.</p>
-                
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="navigateTo('find-printer')">🔍 Find a Printer</button>
-                    <button class="btn btn-secondary" onclick="navigateTo('register-printer')">💰 Earn with Your Printer</button>
+                <div class="hero-copy">
+                    <p class="eyebrow">Singapore printing marketplace</p>
+                    <h1>Print nearby. Earn from your printer.</h1>
+                    <p class="subtitle">Find a nearby printer when you need documents, or earn extra income by offering printing services from home.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" type="button" data-action="navigate" data-target="find-printer">🔍 Find a Printer</button>
+                        <button class="btn btn-secondary" type="button" data-action="navigate" data-target="register-printer">💰 Earn with Your Printer</button>
+                    </div>
                 </div>
             </div>
 
-            <!-- How It Works -->
-            <section class="how-it-works">
-                <h2>How It Works</h2>
+            <section class="content-panel" aria-labelledby="how-it-works-title">
+                <h2 id="how-it-works-title">How It Works</h2>
                 <div class="steps">
-                    <div class="step">
+                    <article class="step">
                         <div class="step-number">1</div>
                         <h3>Search by Location</h3>
-                        <p>Enter your postal code to find nearby printer owners.</p>
-                    </div>
-                    <div class="step">
+                        <p>Enter your postal code or nearby area to explore local printer owners.</p>
+                    </article>
+                    <article class="step">
                         <div class="step-number">2</div>
-                        <h3>Choose a Printer</h3>
-                        <p>Compare prices, ratings, and availability to find the best fit.</p>
-                    </div>
-                    <div class="step">
+                        <h3>Compare Options</h3>
+                        <p>Review availability, page rates, and turnaround time before you order.</p>
+                    </article>
+                    <article class="step">
                         <div class="step-number">3</div>
-                        <h3>Upload & Pay</h3>
-                        <p>Upload your PDF, select print options, and simulate payment.</p>
-                    </div>
-                    <div class="step">
+                        <h3>Upload &amp; Pay</h3>
+                        <p>Upload a PDF, choose your print settings, and complete a simulated checkout.</p>
+                    </article>
+                    <article class="step">
                         <div class="step-number">4</div>
-                        <h3>Collect Your Prints</h3>
-                        <p>Pick up your prints from the printer owner's location.</p>
-                    </div>
+                        <h3>Collect Prints</h3>
+                        <p>Pick up your documents from the printer owner using collection instructions.</p>
+                    </article>
                 </div>
             </section>
 
-            <!-- Pricing Example -->
-            <section class="pricing-section">
-                <h2>Illustrative Pricing</h2>
-                <p class="disclaimer">📌 <strong>Demo prices shown below for illustration only.</strong> Individual printer owners set their own prices.</p>
+            <section class="content-panel" aria-labelledby="pricing-title">
+                <h2 id="pricing-title">Illustrative Pricing</h2>
+                <p class="disclaimer"><strong>Demo rates shown for illustration only.</strong> Individual printer owners can set their own pricing.</p>
                 <div class="pricing-cards">
                     <div class="pricing-card">
-                        <h3>Black & White</h3>
-                        <p class="price">$0.15</p>
+                        <h3>Black &amp; White</h3>
+                        <p class="price">S$0.15</p>
                         <p class="unit">per printed page</p>
                     </div>
                     <div class="pricing-card">
                         <h3>Colour</h3>
-                        <p class="price">$0.40</p>
+                        <p class="price">S$0.40</p>
                         <p class="unit">per printed page</p>
                     </div>
                     <div class="pricing-card">
                         <h3>Service Fee</h3>
-                        <p class="price">$0.50</p>
+                        <p class="price">S$0.50</p>
                         <p class="unit">per order</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Testimonials -->
-            <section class="testimonials">
-                <h2>Customer Testimonials</h2>
-                <p class="disclaimer">📌 <strong>Demo testimonials below are sample content for illustration only.</strong></p>
+            <section class="content-panel" aria-labelledby="testimonials-title">
+                <h2 id="testimonials-title">Customer Testimonials</h2>
+                <p class="disclaimer"><strong>Demo content only.</strong> These reviews are sample testimonials for prototype display.</p>
                 <div class="testimonial-cards">
-                    <div class="testimonial">
-                        <p class="quote">"Found a printer owner just 5 minutes away! Saved me a trip to the mall."</p>
-                        <p class="author">- Sarah (Demo Customer)</p>
+                    <article class="testimonial">
+                        <p class="quote">“Found a nearby printer in under 10 minutes. The service was simple and convenient.”</p>
+                        <p class="author">— Sarah, Demo Customer</p>
+                    </article>
+                    <article class="testimonial">
+                        <p class="quote">“I earn extra income each week by sharing my printer at home. The prototype shows the idea clearly.”</p>
+                        <p class="author">— Alex, Demo Printer Owner</p>
+                    </article>
+                    <article class="testimonial">
+                        <p class="quote">“I can compare prices and collect prints from local homes without leaving my neighbourhood.”</p>
+                        <p class="author">— Jordan, Demo Customer</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-panel" aria-labelledby="faq-title">
+                <h2 id="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>How do I find a nearby printer?</h3>
+                        <p>Enter a postal code or nearby area on the Find a Printer page to compare home-based print providers.</p>
                     </div>
-                    <div class="testimonial">
-                        <p class="quote">"I earn an extra $50-100 each week by offering printing services from home."</p>
-                        <p class="author">- Alex (Demo Printer Owner)</p>
+                    <div class="faq-item">
+                        <h3>How much can I earn as a printer owner?</h3>
+                        <p>It depends on your set per-page rates. InstPrint's prototype uses a 20% commission on the printing subtotal.</p>
                     </div>
-                    <div class="testimonial">
-                        <p class="quote">"Convenient, affordable, and supports local home-based entrepreneurs."</p>
-                        <p class="author">- Jordan (Demo Customer)</p>
+                    <div class="faq-item">
+                        <h3>Do you process real payments?</h3>
+                        <p>No. This prototype uses a simulated demo checkout and does not process real payment details.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is the listing shared publicly?</h3>
+                        <p>No. LocalStorage is browser-specific. Your printer listing is not published to other users or devices.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- FAQs -->
-            <section class="faqs">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-item">
-                    <h3 class="faq-question">How do I find a nearby printer?</h3>
-                    <p class="faq-answer">Enter your postal code or location in the search box on the "Find a Printer" page. You'll see available printer owners nearby with their prices and availability.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How much can I earn as a printer owner?</h3>
-                    <p class="faq-answer">Earnings depend on your prices and order volume. InstPrint charges a 20% commission on printing subtotal (not including the service fee). You keep 80% of the printing revenue.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">What payment methods do you accept?</h3>
-                    <p class="faq-answer">This is a prototype. Demo checkout simulates payment but does not process real transactions. A production version would support multiple payment methods.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Is my data secure?</h3>
-                    <p class="faq-answer">This prototype stores data in your browser's localStorage. It is not suitable for production use. Never enter real payment credentials. A production system would use secure servers and encryption.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I cancel an order?</h3>
-                    <p class="faq-answer">Yes. If an order is in "Pending" or "Paid" status, you can cancel it from your order history. Once printing has started, cancellation may not be possible.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How does the distance calculation work?</h3>
-                    <p class="faq-answer">This prototype uses postal codes and illustrative distance data for demonstration. Real implementation would use precise coordinates and actual distance calculations.</p>
-                </div>
-            </section>
-
-            <!-- Footer -->
             <footer class="footer">
-                <p>&copy; 2024 InstPrint Prototype. For demonstration purposes only.</p>
-                <p>
-                    <a href="#privacy">Privacy Policy</a> | 
-                    <a href="#terms">Terms of Service</a> | 
-                    <a href="#contact">Contact Us</a>
-                </p>
+                <p>© 2024 InstPrint Prototype. Demo content only.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </footer>
         </section>
 
-        <!-- Find a Printer Section -->
-        <section id="find-printer" class="section">
-            <h1>Find a Printer Near You</h1>
-            
+        <section id="find-printer" class="section" aria-label="Find printer section">
+            <div class="section-header">
+                <h1>Find a Printer Near You</h1>
+            </div>
+
             <div class="search-bar">
-                <input type="text" id="searchLocation" placeholder="Enter postal code or location (e.g., 238862, Clementi)" class="search-input">
-                <button class="btn btn-primary" onclick="app.searchPrinters()">🔍 Search</button>
+                <input type="text" id="searchLocation" class="search-input" placeholder="Enter postal code or location (e.g. 238862, Clementi)">
+                <button class="btn btn-primary" type="button" data-action="search-printers">🔍 Find a Printer</button>
             </div>
 
             <div class="filters">
                 <div class="filter-group">
-                    <label>Print Type:</label>
-                    <select id="filterPrintType" onchange="app.applyFilters()">
+                    <label for="filterPrintType">Print Type</label>
+                    <select id="filterPrintType">
                         <option value="">All Types</option>
-                        <option value="bw">Black & White</option>
+                        <option value="bw">Black &amp; White</option>
                         <option value="colour">Colour</option>
                         <option value="both">Both</option>
                     </select>
                 </div>
+
                 <div class="filter-group">
-                    <label>Max Price per Page:</label>
-                    <input type="number" id="filterMaxPrice" placeholder="e.g., 0.50" step="0.01" min="0" onchange="app.applyFilters()">
+                    <label for="filterMaxPrice">Max Price / Page</label>
+                    <input type="number" id="filterMaxPrice" placeholder="e.g. 0.50" step="0.01" min="0">
                 </div>
+
                 <div class="filter-group">
-                    <label>Availability:</label>
-                    <select id="filterAvailability" onchange="app.applyFilters()">
+                    <label for="filterAvailability">Availability</label>
+                    <select id="filterAvailability">
                         <option value="">All</option>
                         <option value="available">Available</option>
                         <option value="unavailable">Unavailable</option>
                     </select>
                 </div>
+
                 <div class="filter-group">
-                    <label>Sort By:</label>
-                    <select id="sortBy" onchange="app.applyFilters()">
-                        <option value="price-asc">Price (Low to High)</option>
-                        <option value="price-desc">Price (High to Low)</option>
+                    <label for="sortBy">Sort By</label>
+                    <select id="sortBy">
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
                         <option value="distance">Distance</option>
                         <option value="rating">Rating</option>
                     </select>
                 </div>
-                <button class="btn btn-outline" onclick="app.resetFilters()">Reset Filters</button>
+
+                <button class="btn btn-outline" type="button" data-action="reset-filters">Reset Filters</button>
             </div>
 
-            <div id="printerListings" class="printer-listings">
-                <p class="empty-state">👉 Enter a location and click Search to find printers.</p>
-            </div>
+            <div id="printerListings" class="printer-listings" aria-live="polite"></div>
         </section>
 
-        <!-- Register Printer Section -->
-        <section id="register-printer" class="section">
-            <h1>Register as a Printer Owner</h1>
-            <p class="disclaimer">📌 <strong>Prototype Notice:</strong> Your listing is stored only in this browser using localStorage. It will not be visible to other users or devices.</p>
-            
-            <form id="printerForm" class="form">
+        <section id="register-printer" class="section" aria-label="Register printer section">
+            <div class="section-header">
+                <h1>Register as a Printer Owner</h1>
+            </div>
+            <p class="disclaimer"><strong>Prototype Notice:</strong> Your listing is stored only in this browser using localStorage. It will not appear to other users or devices.</p>
+
+            <form id="printerForm" class="form" novalidate>
                 <div class="form-group">
                     <label for="displayName">Display Name *</label>
-                    <input type="text" id="displayName" required placeholder="e.g., Sarah's Home Printing">
-                    <small class="help-text">How customers will see your name</small>
+                    <input type="text" id="displayName" required placeholder="e.g. Sarah's Home Printing">
                 </div>
 
                 <div class="form-group">
-                    <label for="location">Location / Postal Code *</label>
-                    <input type="text" id="location" required placeholder="e.g., 238862, Clementi">
-                    <small class="help-text">Help customers find you</small>
+                    <label for="location">Approximate Location or Postal Code *</label>
+                    <input type="text" id="location" required placeholder="e.g. 238862, Clementi">
                 </div>
 
                 <div class="form-group">
                     <label for="printerModel">Printer Model *</label>
-                    <input type="text" id="printerModel" required placeholder="e.g., HP LaserJet Pro M404n">
+                    <input type="text" id="printerModel" required placeholder="e.g. HP LaserJet Pro M404n">
                 </div>
 
                 <div class="form-group">
@@ -237,223 +227,218 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="bwPrice">B&W Price per Page (SGD) *</label>
-                        <input type="number" id="bwPrice" required placeholder="0.15" step="0.01" min="0.01">
+                        <label for="bwPrice">Black &amp; White Price per Page (SGD) *</label>
+                        <input type="number" id="bwPrice" required step="0.01" min="0.01" placeholder="0.15">
                     </div>
                     <div class="form-group">
                         <label for="colourPrice">Colour Price per Page (SGD) *</label>
-                        <input type="number" id="colourPrice" required placeholder="0.40" step="0.01" min="0.01">
+                        <input type="number" id="colourPrice" required step="0.01" min="0.01" placeholder="0.40">
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label><input type="checkbox" id="duplexSupport"> Duplex (Double-Sided) Printing Supported</label>
-                </div>
-
-                <div class="form-group">
-                    <label for="minOrder">Minimum Order Amount (SGD)</label>
-                    <input type="number" id="minOrder" placeholder="2.00" step="0.01" min="0">
+                <div class="form-group checkbox-inline">
+                    <label><input type="checkbox" id="duplexSupport"> Duplex printing supported</label>
                 </div>
 
                 <div class="form-group">
                     <label for="availability">Weekly Availability</label>
-                    <textarea id="availability" placeholder="e.g., Mon-Fri 6pm-10pm, Sat-Sun 10am-6pm"></textarea>
+                    <textarea id="availability" rows="3" placeholder="e.g. Mon-Fri 6pm-10pm, Sat-Sun 10am-6pm"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="minOrder">Minimum Order Amount (SGD)</label>
+                    <input type="number" id="minOrder" step="0.01" min="0" placeholder="2.00">
                 </div>
 
                 <div class="form-group">
                     <label for="collectionInstructions">Collection Instructions</label>
-                    <textarea id="collectionInstructions" placeholder="e.g., Please text me 30 minutes before pickup. I'm at Block 123, Unit 04-05."></textarea>
+                    <textarea id="collectionInstructions" rows="3" placeholder="e.g. Please text me before collection and I can meet at the lift lobby."></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Register Printer Listing</button>
+                <button class="btn btn-primary" type="submit">Register Listing</button>
             </form>
         </section>
 
-        <!-- My Orders Section -->
-        <section id="my-orders" class="section">
-            <h1>My Order History</h1>
-            <div id="orderHistory" class="orders-container">
-                <p class="empty-state">📭 No orders yet. <a href="#find-printer">Find a printer</a> to get started.</p>
+        <section id="my-orders" class="section" aria-label="My orders section">
+            <div class="section-header">
+                <h1>My Order History</h1>
             </div>
+            <div id="orderHistory" class="orders-container" aria-live="polite"></div>
         </section>
 
-        <!-- Owner Dashboard Section -->
-        <section id="owner-dashboard" class="section">
-            <h1>Printer Owner Dashboard</h1>
-            <p class="disclaimer">📌 <strong>Prototype Notice:</strong> This dashboard displays only demo data from your browser. It cannot receive orders from other users.</p>
-            
+        <section id="owner-dashboard" class="section" aria-label="Owner dashboard section">
+            <div class="section-header">
+                <h1>Printer Owner Dashboard</h1>
+            </div>
+            <p class="disclaimer"><strong>Prototype Notice:</strong> This dashboard only reflects local demo data in the current browser. It cannot receive orders from other people's browsers.</p>
+
             <div class="dashboard-stats">
                 <div class="stat-card">
                     <h3>Active Listings</h3>
-                    <p class="stat-value" id="activePrinters">0</p>
+                    <p id="activePrinters" class="stat-value">0</p>
                 </div>
                 <div class="stat-card">
                     <h3>Total Demo Orders</h3>
-                    <p class="stat-value" id="totalOrders">0</p>
+                    <p id="totalOrders" class="stat-value">0</p>
                 </div>
                 <div class="stat-card">
                     <h3>Simulated Printing Value</h3>
-                    <p class="stat-value" id="totalPrintingValue">$0.00</p>
+                    <p id="totalPrintingValue" class="stat-value">S$0.00</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Simulated Earnings (80%)</h3>
-                    <p class="stat-value" id="totalEarnings">$0.00</p>
+                    <h3>Simulated Earnings</h3>
+                    <p id="totalEarnings" class="stat-value">S$0.00</p>
                 </div>
             </div>
 
-            <h2>My Printer Listings</h2>
-            <div id="myPrinterListings" class="my-printers-container">
-                <p class="empty-state">📭 No printers registered yet. <a href="#register-printer">Create a listing</a> to get started.</p>
+            <div class="dashboard-section">
+                <h2>My Printer Listings</h2>
+                <div id="myPrinterListings" class="owner-listings" aria-live="polite"></div>
             </div>
 
-            <h2>Demo Orders for My Printers</h2>
-            <div id="ownerOrders" class="orders-container">
-                <p class="empty-state">📭 No orders yet.</p>
+            <div class="dashboard-section">
+                <h2>Demo Orders for My Printers</h2>
+                <div id="ownerOrders" class="orders-container" aria-live="polite"></div>
             </div>
         </section>
 
-        <!-- Admin Dashboard Section -->
-        <section id="admin-dashboard" class="section">
-            <h1>🔒 Admin Demo Dashboard</h1>
-            <p class="disclaimer" style="background-color: #ffe6e6; border-color: #ff6b6b;">
-                ⚠️ <strong>FOR DEMONSTRATION ONLY</strong> - This dashboard shows prototype metrics based on demo data stored in this browser's localStorage. 
-                This is not a real admin panel. No real user data is collected or displayed.
-            </p>
+        <section id="admin-dashboard" class="section" aria-label="Admin dashboard section">
+            <div class="section-header">
+                <h1>Admin Demo Dashboard</h1>
+            </div>
+            <p class="disclaimer admin-warning"><strong>FOR DEMONSTRATION ONLY</strong> — this dashboard shows prototype metrics based on browser localStorage. There is no secure administrator login.</p>
 
-            <div class="admin-stats">
+            <div class="dashboard-stats admin-stats">
                 <div class="stat-card">
-                    <h3>Demo Printers in System</h3>
-                    <p class="stat-value" id="adminTotalPrinters">0</p>
+                    <h3>Demo Printers</h3>
+                    <p id="adminTotalPrinters" class="stat-value">0</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Demo Orders Placed</h3>
-                    <p class="stat-value" id="adminTotalOrders">0</p>
+                    <h3>Demo Orders</h3>
+                    <p id="adminTotalOrders" class="stat-value">0</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Simulated Platform Revenue (20%)</h3>
-                    <p class="stat-value" id="adminPlatformRevenue">$0.00</p>
+                    <h3>Printing Value</h3>
+                    <p id="adminPrintingValue" class="stat-value">S$0.00</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Simulated Provider Earnings (80%)</h3>
-                    <p class="stat-value" id="adminProviderEarnings">$0.00</p>
+                    <h3>Platform Revenue</h3>
+                    <p id="adminPlatformRevenue" class="stat-value">S$0.00</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Simulated Customer Service Fees</h3>
-                    <p class="stat-value" id="adminServiceFees">$0.00</p>
+                    <h3>Provider Earnings</h3>
+                    <p id="adminProviderEarnings" class="stat-value">S$0.00</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Service Fees</h3>
+                    <p id="adminServiceFees" class="stat-value">S$0.00</p>
                 </div>
             </div>
 
-            <h2>Order Status Summary</h2>
-            <div id="adminOrderSummary" class="order-summary">
-                <!-- Populated by JavaScript -->
+            <div class="dashboard-section">
+                <h2>Order Status Summary</h2>
+                <div id="adminOrderSummary" class="order-summary"></div>
             </div>
 
-            <h2>System Data</h2>
             <div class="data-actions">
-                <button class="btn btn-outline" onclick="app.admin.exportData()">📥 Export Demo Data (JSON)</button>
-                <button class="btn btn-danger" onclick="app.admin.clearData()">🗑️ Clear All Demo Data</button>
+                <button class="btn btn-outline" type="button" data-action="export-demo-data">📥 Export Demo Data (JSON)</button>
+                <button class="btn btn-danger" type="button" data-action="clear-demo-data">🗑️ Clear All Demo Data</button>
             </div>
         </section>
+    </main>
 
-        <!-- Printer Detail Modal -->
-        <div id="printerDetailModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="app.closePrinterDetail()">&times;</span>
-                <div id="printerDetailContent">
-                    <!-- Populated by JavaScript -->
-                </div>
-            </div>
+    <div id="printerDetailModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" type="button" data-close="printer-detail" aria-label="Close printer details">&times;</button>
+            <div id="printerDetailContent"></div>
         </div>
+    </div>
 
-        <!-- Order Form Modal -->
-        <div id="orderFormModal" class="modal">
-            <div class="modal-content modal-large">
-                <span class="close" onclick="app.closeOrderForm()">&times;</span>
-                <h2>Create Print Order</h2>
-                <form id="printOrderForm" class="form">
-                    <div class="form-group">
-                        <label for="orderPages">Number of Pages *</label>
-                        <input type="number" id="orderPages" required min="1" placeholder="Enter manually or upload PDF">
-                        <small class="help-text">Manually enter the page count. (PDF auto-detection not available in this prototype.)</small>
-                    </div>
+    <div id="orderFormModal" class="modal" aria-hidden="true">
+        <div class="modal-content modal-large">
+            <button class="close" type="button" data-close="order-form" aria-label="Close order form">&times;</button>
+            <h2>Create Print Order</h2>
+            <form id="printOrderForm" class="form" novalidate>
+                <div class="form-group">
+                    <label for="pdfUpload">Upload PDF (Temporary only)</label>
+                    <input type="file" id="pdfUpload" accept="application/pdf">
+                    <small class="help-text">File is kept in memory only for this session and is not stored in localStorage.</small>
+                </div>
 
+                <div class="form-group">
+                    <label for="orderPages">Number of Pages *</label>
+                    <input type="number" id="orderPages" required min="1" placeholder="Enter manually if PDF is not available">
+                    <small class="help-text">This is customer-entered page count for this prototype. PDF files are not processed or permanently stored.</small>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group">
                         <label for="orderPrintType">Print Type *</label>
-                        <select id="orderPrintType" required onchange="app.calculateOrderPrice()">
-                            <option value="">Select...</option>
-                            <option value="bw">Black & White</option>
+                        <select id="orderPrintType" required>
+                            <option value="">Select</option>
+                            <option value="bw">Black &amp; White</option>
                             <option value="colour">Colour</option>
                         </select>
                     </div>
-
                     <div class="form-group">
                         <label for="orderSided">Print Sides *</label>
                         <select id="orderSided" required>
-                            <option value="">Select...</option>
+                            <option value="">Select</option>
                             <option value="single">Single-Sided</option>
-                            <option value="double">Double-Sided (Duplex)</option>
+                            <option value="double">Double-Sided</option>
                         </select>
                     </div>
+                </div>
 
+                <div class="form-row">
                     <div class="form-group">
-                        <label for="orderCopies">Number of Copies *</label>
-                        <input type="number" id="orderCopies" required min="1" value="1" onchange="app.calculateOrderPrice()">
+                        <label for="orderCopies">Copies *</label>
+                        <input type="number" id="orderCopies" required min="1" value="1">
                     </div>
-
                     <div class="form-group">
                         <label for="orderPaperSize">Paper Size *</label>
                         <select id="orderPaperSize" required>
-                            <option value="">Select...</option>
+                            <option value="">Select</option>
                             <option value="A4">A4</option>
                             <option value="A3">A3</option>
                             <option value="Letter">Letter</option>
                             <option value="Legal">Legal</option>
                         </select>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="orderNotes">Collection Notes</label>
-                        <textarea id="orderNotes" placeholder="e.g., Please bind with staples. My contact: 9999-1234"></textarea>
-                    </div>
+                <div class="form-group">
+                    <label for="orderNotes">Collection Notes</label>
+                    <textarea id="orderNotes" rows="3" placeholder="Optional notes for the printer owner"></textarea>
+                </div>
 
-                    <div id="priceBreakdown" class="price-breakdown">
-                        <!-- Populated by JavaScript -->
-                    </div>
+                <div id="priceBreakdown" class="price-breakdown"></div>
 
-                    <button type="submit" class="btn btn-primary">Proceed to Checkout</button>
-                </form>
-            </div>
+                <button class="btn btn-primary" type="submit">Proceed to Checkout</button>
+            </form>
         </div>
+    </div>
 
-        <!-- Checkout Modal -->
-        <div id="checkoutModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="app.closeCheckout()">&times;</span>
-                <h2>Demo Checkout</h2>
-                <p class="disclaimer">📌 <strong>This is a simulated checkout.</strong> No real payment will be processed.</p>
-                <div id="checkoutSummary">
-                    <!-- Populated by JavaScript -->
-                </div>
-                <div class="checkout-actions">
-                    <button class="btn btn-success" onclick="app.simulatePaymentSuccess()">✓ Simulate Successful Payment</button>
-                    <button class="btn btn-danger" onclick="app.simulatePaymentFailure()">✗ Simulate Failed Payment</button>
-                </div>
-                <button class="btn btn-outline" onclick="app.closeCheckout()">Cancel</button>
-            </div>
-        </div>
-
-        <!-- Order Confirmation Modal -->
-        <div id="confirmationModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="app.closeConfirmation()">&times;</span>
-                <div id="confirmationContent">
-                    <!-- Populated by JavaScript -->
-                </div>
+    <div id="checkoutModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" type="button" data-close="checkout" aria-label="Close checkout">&times;</button>
+            <h2>Demo Checkout</h2>
+            <p class="disclaimer"><strong>This is a simulated checkout only.</strong> No real payment or card details are collected.</p>
+            <div id="checkoutSummary"></div>
+            <div class="checkout-actions">
+                <button class="btn btn-success" type="button" data-action="payment-success">✓ Simulate Successful Payment</button>
+                <button class="btn btn-danger" type="button" data-action="payment-failure">✗ Simulate Failed Payment</button>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
+    <div id="confirmationModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" type="button" data-close="confirmation" aria-label="Close confirmation">&times;</button>
+            <div id="confirmationContent"></div>
+        </div>
+    </div>
+
     <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
